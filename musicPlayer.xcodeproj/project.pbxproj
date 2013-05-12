@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88C01B2016E4911000744013 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C01B1F16E4911000744013 /* UIKit.framework */; };
+		88C01B2216E4911000744013 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C01B2116E4911000744013 /* Foundation.framework */; };
+		88C01B2416E4911000744013 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C01B2316E4911000744013 /* CoreGraphics.framework */; };
+		88C01B2A16E4911000744013 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88C01B2816E4911000744013 /* InfoPlist.strings */; };
+		88C01B2C16E4911000744013 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C01B2B16E4911000744013 /* main.m */; };
+		88C01B3016E4911000744013 /* nceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C01B2F16E4911000744013 /* nceAppDelegate.m */; };
+		88C01B3216E4911000744013 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C01B3116E4911000744013 /* Default.png */; };
+		88C01B3416E4911000744013 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C01B3316E4911000744013 /* Default@2x.png */; };
+		88C01B3616E4911000744013 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C01B3516E4911000744013 /* Default-568h@2x.png */; };
+		88C01B3916E4911000744013 /* nceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C01B3816E4911000744013 /* nceViewController.m */; };
+		88C01B3C16E4911000744013 /* nceViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C01B3A16E4911000744013 /* nceViewController_iPhone.xib */; };
+		88C01B3F16E4911000744013 /* nceViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C01B3D16E4911000744013 /* nceViewController_iPad.xib */; };
+		88C01B4616E4915B00744013 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C01B4516E4915B00744013 /* AVFoundation.framework */; };
+		88C01B5116E4991800744013 /* wakeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88C01B5016E4991700744013 /* wakeup.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		88C01B1B16E4911000744013 /* musicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88C01B1F16E4911000744013 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		88C01B2116E4911000744013 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		88C01B2316E4911000744013 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		88C01B2716E4911000744013 /* musicPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "musicPlayer-Info.plist"; sourceTree = "<group>"; };
+		88C01B2916E4911000744013 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		88C01B2B16E4911000744013 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		88C01B2D16E4911000744013 /* musicPlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "musicPlayer-Prefix.pch"; sourceTree = "<group>"; };
+		88C01B2E16E4911000744013 /* nceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nceAppDelegate.h; sourceTree = "<group>"; };
+		88C01B2F16E4911000744013 /* nceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nceAppDelegate.m; sourceTree = "<group>"; };
+		88C01B3116E4911000744013 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		88C01B3316E4911000744013 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		88C01B3516E4911000744013 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		88C01B3716E4911000744013 /* nceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nceViewController.h; sourceTree = "<group>"; };
+		88C01B3816E4911000744013 /* nceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nceViewController.m; sourceTree = "<group>"; };
+		88C01B3B16E4911000744013 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/nceViewController_iPhone.xib; sourceTree = "<group>"; };
+		88C01B3E16E4911000744013 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/nceViewController_iPad.xib; sourceTree = "<group>"; };
+		88C01B4516E4915B00744013 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		88C01B5016E4991700744013 /* wakeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wakeup.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88C01B1816E4911000744013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C01B4616E4915B00744013 /* AVFoundation.framework in Frameworks */,
+				88C01B2016E4911000744013 /* UIKit.framework in Frameworks */,
+				88C01B2216E4911000744013 /* Foundation.framework in Frameworks */,
+				88C01B2416E4911000744013 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88C01B1016E4911000744013 = {
+			isa = PBXGroup;
+			children = (
+				88C01B4516E4915B00744013 /* AVFoundation.framework */,
+				88C01B2516E4911000744013 /* musicPlayer */,
+				88C01B1E16E4911000744013 /* Frameworks */,
+				88C01B1C16E4911000744013 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88C01B1C16E4911000744013 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88C01B1B16E4911000744013 /* musicPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88C01B1E16E4911000744013 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88C01B1F16E4911000744013 /* UIKit.framework */,
+				88C01B2116E4911000744013 /* Foundation.framework */,
+				88C01B2316E4911000744013 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88C01B2516E4911000744013 /* musicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				88C01B2E16E4911000744013 /* nceAppDelegate.h */,
+				88C01B2F16E4911000744013 /* nceAppDelegate.m */,
+				88C01B3716E4911000744013 /* nceViewController.h */,
+				88C01B3816E4911000744013 /* nceViewController.m */,
+				88C01B5016E4991700744013 /* wakeup.mp3 */,
+				88C01B3A16E4911000744013 /* nceViewController_iPhone.xib */,
+				88C01B3D16E4911000744013 /* nceViewController_iPad.xib */,
+				88C01B2616E4911000744013 /* Supporting Files */,
+			);
+			path = musicPlayer;
+			sourceTree = "<group>";
+		};
+		88C01B2616E4911000744013 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88C01B2716E4911000744013 /* musicPlayer-Info.plist */,
+				88C01B2816E4911000744013 /* InfoPlist.strings */,
+				88C01B2B16E4911000744013 /* main.m */,
+				88C01B2D16E4911000744013 /* musicPlayer-Prefix.pch */,
+				88C01B3116E4911000744013 /* Default.png */,
+				88C01B3316E4911000744013 /* Default@2x.png */,
+				88C01B3516E4911000744013 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88C01B1A16E4911000744013 /* musicPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88C01B4216E4911000744013 /* Build configuration list for PBXNativeTarget "musicPlayer" */;
+			buildPhases = (
+				88C01B1716E4911000744013 /* Sources */,
+				88C01B1816E4911000744013 /* Frameworks */,
+				88C01B1916E4911000744013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = musicPlayer;
+			productName = musicPlayer;
+			productReference = 88C01B1B16E4911000744013 /* musicPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88C01B1216E4911000744013 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = nce;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = hilen;
+			};
+			buildConfigurationList = 88C01B1516E4911000744013 /* Build configuration list for PBXProject "musicPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 88C01B1016E4911000744013;
+			productRefGroup = 88C01B1C16E4911000744013 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88C01B1A16E4911000744013 /* musicPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88C01B1916E4911000744013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C01B2A16E4911000744013 /* InfoPlist.strings in Resources */,
+				88C01B3216E4911000744013 /* Default.png in Resources */,
+				88C01B3416E4911000744013 /* Default@2x.png in Resources */,
+				88C01B3616E4911000744013 /* Default-568h@2x.png in Resources */,
+				88C01B3C16E4911000744013 /* nceViewController_iPhone.xib in Resources */,
+				88C01B3F16E4911000744013 /* nceViewController_iPad.xib in Resources */,
+				88C01B5116E4991800744013 /* wakeup.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88C01B1716E4911000744013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C01B2C16E4911000744013 /* main.m in Sources */,
+				88C01B3016E4911000744013 /* nceAppDelegate.m in Sources */,
+				88C01B3916E4911000744013 /* nceViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		88C01B2816E4911000744013 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88C01B2916E4911000744013 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		88C01B3A16E4911000744013 /* nceViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88C01B3B16E4911000744013 /* en */,
+			);
+			name = nceViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		88C01B3D16E4911000744013 /* nceViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88C01B3E16E4911000744013 /* en */,
+			);
+			name = nceViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88C01B4016E4911000744013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88C01B4116E4911000744013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88C01B4316E4911000744013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "musicPlayer/musicPlayer-Prefix.pch";
+				INFOPLIST_FILE = "musicPlayer/musicPlayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		88C01B4416E4911000744013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "musicPlayer/musicPlayer-Prefix.pch";
+				INFOPLIST_FILE = "musicPlayer/musicPlayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88C01B1516E4911000744013 /* Build configuration list for PBXProject "musicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88C01B4016E4911000744013 /* Debug */,
+				88C01B4116E4911000744013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88C01B4216E4911000744013 /* Build configuration list for PBXNativeTarget "musicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88C01B4316E4911000744013 /* Debug */,
+				88C01B4416E4911000744013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88C01B1216E4911000744013 /* Project object */;
+}
