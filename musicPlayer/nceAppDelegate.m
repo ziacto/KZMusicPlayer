@@ -6,6 +6,9 @@
 //  Copyright (c) 2013年 hilen. All rights reserved.
 //
 
+#if DEBUG
+#import <SparkInspector/SparkInspector.h>
+#endif
 #import "nceAppDelegate.h"
 
 #import "nceViewController.h"
@@ -21,6 +24,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Enable the Spark Inspector
+    #if DEBUG
+    [SparkInspector enableObservation];
+    #endif
+
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {

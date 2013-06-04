@@ -1,324 +1,838 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		88C01B2016E4911000744013 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C01B1F16E4911000744013 /* UIKit.framework */; };
-		88C01B2216E4911000744013 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C01B2116E4911000744013 /* Foundation.framework */; };
-		88C01B2416E4911000744013 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C01B2316E4911000744013 /* CoreGraphics.framework */; };
-		88C01B2A16E4911000744013 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88C01B2816E4911000744013 /* InfoPlist.strings */; };
-		88C01B2C16E4911000744013 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C01B2B16E4911000744013 /* main.m */; };
-		88C01B3016E4911000744013 /* nceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C01B2F16E4911000744013 /* nceAppDelegate.m */; };
-		88C01B3216E4911000744013 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C01B3116E4911000744013 /* Default.png */; };
-		88C01B3416E4911000744013 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C01B3316E4911000744013 /* Default@2x.png */; };
-		88C01B3616E4911000744013 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C01B3516E4911000744013 /* Default-568h@2x.png */; };
-		88C01B3916E4911000744013 /* nceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C01B3816E4911000744013 /* nceViewController.m */; };
-		88C01B3C16E4911000744013 /* nceViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C01B3A16E4911000744013 /* nceViewController_iPhone.xib */; };
-		88C01B3F16E4911000744013 /* nceViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C01B3D16E4911000744013 /* nceViewController_iPad.xib */; };
-		88C01B4616E4915B00744013 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C01B4516E4915B00744013 /* AVFoundation.framework */; };
-		88C01B5116E4991800744013 /* wakeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88C01B5016E4991700744013 /* wakeup.mp3 */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		88C01B1B16E4911000744013 /* musicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		88C01B1F16E4911000744013 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		88C01B2116E4911000744013 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		88C01B2316E4911000744013 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		88C01B2716E4911000744013 /* musicPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "musicPlayer-Info.plist"; sourceTree = "<group>"; };
-		88C01B2916E4911000744013 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		88C01B2B16E4911000744013 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		88C01B2D16E4911000744013 /* musicPlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "musicPlayer-Prefix.pch"; sourceTree = "<group>"; };
-		88C01B2E16E4911000744013 /* nceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nceAppDelegate.h; sourceTree = "<group>"; };
-		88C01B2F16E4911000744013 /* nceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nceAppDelegate.m; sourceTree = "<group>"; };
-		88C01B3116E4911000744013 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		88C01B3316E4911000744013 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		88C01B3516E4911000744013 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		88C01B3716E4911000744013 /* nceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nceViewController.h; sourceTree = "<group>"; };
-		88C01B3816E4911000744013 /* nceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nceViewController.m; sourceTree = "<group>"; };
-		88C01B3B16E4911000744013 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/nceViewController_iPhone.xib; sourceTree = "<group>"; };
-		88C01B3E16E4911000744013 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/nceViewController_iPad.xib; sourceTree = "<group>"; };
-		88C01B4516E4915B00744013 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		88C01B5016E4991700744013 /* wakeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wakeup.mp3; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		88C01B1816E4911000744013 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88C01B4616E4915B00744013 /* AVFoundation.framework in Frameworks */,
-				88C01B2016E4911000744013 /* UIKit.framework in Frameworks */,
-				88C01B2216E4911000744013 /* Foundation.framework in Frameworks */,
-				88C01B2416E4911000744013 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		88C01B1016E4911000744013 = {
-			isa = PBXGroup;
-			children = (
-				88C01B4516E4915B00744013 /* AVFoundation.framework */,
-				88C01B2516E4911000744013 /* musicPlayer */,
-				88C01B1E16E4911000744013 /* Frameworks */,
-				88C01B1C16E4911000744013 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		88C01B1C16E4911000744013 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				88C01B1B16E4911000744013 /* musicPlayer.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		88C01B1E16E4911000744013 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				88C01B1F16E4911000744013 /* UIKit.framework */,
-				88C01B2116E4911000744013 /* Foundation.framework */,
-				88C01B2316E4911000744013 /* CoreGraphics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		88C01B2516E4911000744013 /* musicPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				88C01B2E16E4911000744013 /* nceAppDelegate.h */,
-				88C01B2F16E4911000744013 /* nceAppDelegate.m */,
-				88C01B3716E4911000744013 /* nceViewController.h */,
-				88C01B3816E4911000744013 /* nceViewController.m */,
-				88C01B5016E4991700744013 /* wakeup.mp3 */,
-				88C01B3A16E4911000744013 /* nceViewController_iPhone.xib */,
-				88C01B3D16E4911000744013 /* nceViewController_iPad.xib */,
-				88C01B2616E4911000744013 /* Supporting Files */,
-			);
-			path = musicPlayer;
-			sourceTree = "<group>";
-		};
-		88C01B2616E4911000744013 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				88C01B2716E4911000744013 /* musicPlayer-Info.plist */,
-				88C01B2816E4911000744013 /* InfoPlist.strings */,
-				88C01B2B16E4911000744013 /* main.m */,
-				88C01B2D16E4911000744013 /* musicPlayer-Prefix.pch */,
-				88C01B3116E4911000744013 /* Default.png */,
-				88C01B3316E4911000744013 /* Default@2x.png */,
-				88C01B3516E4911000744013 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		88C01B1A16E4911000744013 /* musicPlayer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 88C01B4216E4911000744013 /* Build configuration list for PBXNativeTarget "musicPlayer" */;
-			buildPhases = (
-				88C01B1716E4911000744013 /* Sources */,
-				88C01B1816E4911000744013 /* Frameworks */,
-				88C01B1916E4911000744013 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = musicPlayer;
-			productName = musicPlayer;
-			productReference = 88C01B1B16E4911000744013 /* musicPlayer.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		88C01B1216E4911000744013 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = nce;
-				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = hilen;
-			};
-			buildConfigurationList = 88C01B1516E4911000744013 /* Build configuration list for PBXProject "musicPlayer" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 88C01B1016E4911000744013;
-			productRefGroup = 88C01B1C16E4911000744013 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				88C01B1A16E4911000744013 /* musicPlayer */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		88C01B1916E4911000744013 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88C01B2A16E4911000744013 /* InfoPlist.strings in Resources */,
-				88C01B3216E4911000744013 /* Default.png in Resources */,
-				88C01B3416E4911000744013 /* Default@2x.png in Resources */,
-				88C01B3616E4911000744013 /* Default-568h@2x.png in Resources */,
-				88C01B3C16E4911000744013 /* nceViewController_iPhone.xib in Resources */,
-				88C01B3F16E4911000744013 /* nceViewController_iPad.xib in Resources */,
-				88C01B5116E4991800744013 /* wakeup.mp3 in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		88C01B1716E4911000744013 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88C01B2C16E4911000744013 /* main.m in Sources */,
-				88C01B3016E4911000744013 /* nceAppDelegate.m in Sources */,
-				88C01B3916E4911000744013 /* nceViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		88C01B2816E4911000744013 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88C01B2916E4911000744013 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		88C01B3A16E4911000744013 /* nceViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88C01B3B16E4911000744013 /* en */,
-			);
-			name = nceViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		88C01B3D16E4911000744013 /* nceViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88C01B3E16E4911000744013 /* en */,
-			);
-			name = nceViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		88C01B4016E4911000744013 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		88C01B4116E4911000744013 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		88C01B4316E4911000744013 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "musicPlayer/musicPlayer-Prefix.pch";
-				INFOPLIST_FILE = "musicPlayer/musicPlayer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		88C01B4416E4911000744013 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "musicPlayer/musicPlayer-Prefix.pch";
-				INFOPLIST_FILE = "musicPlayer/musicPlayer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		88C01B1516E4911000744013 /* Build configuration list for PBXProject "musicPlayer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				88C01B4016E4911000744013 /* Debug */,
-				88C01B4116E4911000744013 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		88C01B4216E4911000744013 /* Build configuration list for PBXNativeTarget "musicPlayer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				88C01B4316E4911000744013 /* Debug */,
-				88C01B4416E4911000744013 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 88C01B1216E4911000744013 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>88C01B1016E4911000744013</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88C01B4516E4915B00744013</string>
+				<string>88C01B2516E4911000744013</string>
+				<string>88C01B1E16E4911000744013</string>
+				<string>88C01B1C16E4911000744013</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B1216E4911000744013</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>nce</string>
+				<key>LastUpgradeCheck</key>
+				<string>0450</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>hilen</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>88C01B1516E4911000744013</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>88C01B1016E4911000744013</string>
+			<key>productRefGroup</key>
+			<string>88C01B1C16E4911000744013</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>88C01B1A16E4911000744013</string>
+			</array>
+		</dict>
+		<key>88C01B1516E4911000744013</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>88C01B4016E4911000744013</string>
+				<string>88C01B4116E4911000744013</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>88C01B1716E4911000744013</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88C01B2C16E4911000744013</string>
+				<string>88C01B3016E4911000744013</string>
+				<string>88C01B3916E4911000744013</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>88C01B1816E4911000744013</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88C01B4616E4915B00744013</string>
+				<string>88C01B2016E4911000744013</string>
+				<string>88C01B2216E4911000744013</string>
+				<string>88C01B2416E4911000744013</string>
+				<string>KIYDQKWBMRKIEYEVRWSLKUDQ</string>
+				<string>KNPONLATPTEBRUFEBXNXFHCQ</string>
+				<string>KHTIUSNFGMRPHCRVUMVBPGNH</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>88C01B1916E4911000744013</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>88C01B2A16E4911000744013</string>
+				<string>88C01B3216E4911000744013</string>
+				<string>88C01B3416E4911000744013</string>
+				<string>88C01B3616E4911000744013</string>
+				<string>88C01B3C16E4911000744013</string>
+				<string>88C01B3F16E4911000744013</string>
+				<string>88C01B5116E4991800744013</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>88C01B1A16E4911000744013</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>88C01B4216E4911000744013</string>
+			<key>buildPhases</key>
+			<array>
+				<string>88C01B1716E4911000744013</string>
+				<string>88C01B1816E4911000744013</string>
+				<string>88C01B1916E4911000744013</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>musicPlayer</string>
+			<key>productName</key>
+			<string>musicPlayer</string>
+			<key>productReference</key>
+			<string>88C01B1B16E4911000744013</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>88C01B1B16E4911000744013</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>musicPlayer.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>88C01B1C16E4911000744013</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88C01B1B16E4911000744013</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B1E16E4911000744013</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88C01B1F16E4911000744013</string>
+				<string>88C01B2116E4911000744013</string>
+				<string>88C01B2316E4911000744013</string>
+				<string>HYXIFWTDXJPPRRMDCEPMDTJH</string>
+				<string>THBDITSPYVFDWQYYBDCIDIXG</string>
+				<string>QMNTBWVDMICWTEJGUAKXRYSM</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B1F16E4911000744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>88C01B2016E4911000744013</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88C01B1F16E4911000744013</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88C01B2116E4911000744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>88C01B2216E4911000744013</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88C01B2116E4911000744013</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88C01B2316E4911000744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>88C01B2416E4911000744013</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88C01B2316E4911000744013</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88C01B2516E4911000744013</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88C01B2E16E4911000744013</string>
+				<string>88C01B2F16E4911000744013</string>
+				<string>88C01B3716E4911000744013</string>
+				<string>88C01B3816E4911000744013</string>
+				<string>88C01B5016E4991700744013</string>
+				<string>88C01B3A16E4911000744013</string>
+				<string>88C01B3D16E4911000744013</string>
+				<string>88C01B2616E4911000744013</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>musicPlayer</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B2616E4911000744013</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88C01B2716E4911000744013</string>
+				<string>88C01B2816E4911000744013</string>
+				<string>88C01B2B16E4911000744013</string>
+				<string>88C01B2D16E4911000744013</string>
+				<string>88C01B3116E4911000744013</string>
+				<string>88C01B3316E4911000744013</string>
+				<string>88C01B3516E4911000744013</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B2716E4911000744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>musicPlayer-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B2816E4911000744013</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88C01B2916E4911000744013</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B2916E4911000744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B2A16E4911000744013</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88C01B2816E4911000744013</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88C01B2B16E4911000744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B2C16E4911000744013</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88C01B2B16E4911000744013</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88C01B2D16E4911000744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>musicPlayer-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B2E16E4911000744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>nceAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B2F16E4911000744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>nceAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B3016E4911000744013</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88C01B2F16E4911000744013</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88C01B3116E4911000744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B3216E4911000744013</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88C01B3116E4911000744013</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88C01B3316E4911000744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B3416E4911000744013</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88C01B3316E4911000744013</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88C01B3516E4911000744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default-568h@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B3616E4911000744013</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88C01B3516E4911000744013</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88C01B3716E4911000744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>nceViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B3816E4911000744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>nceViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B3916E4911000744013</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88C01B3816E4911000744013</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88C01B3A16E4911000744013</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88C01B3B16E4911000744013</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>nceViewController_iPhone.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B3B16E4911000744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/nceViewController_iPhone.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B3C16E4911000744013</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88C01B3A16E4911000744013</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88C01B3D16E4911000744013</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>88C01B3E16E4911000744013</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>nceViewController_iPad.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B3E16E4911000744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/nceViewController_iPad.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B3F16E4911000744013</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88C01B3D16E4911000744013</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88C01B4016E4911000744013</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"/Applications/Spark Inspector.app/Contents/Resources/Frameworks"</string>
+				</array>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>-ObjC</string>
+				</array>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>88C01B4116E4911000744013</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"/Applications/Spark Inspector.app/Contents/Resources/Frameworks"</string>
+				</array>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>OTHER_CFLAGS</key>
+				<string>-DNS_BLOCK_ASSERTIONS=1</string>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>-ObjC</string>
+				</array>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>88C01B4216E4911000744013</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>88C01B4316E4911000744013</string>
+				<string>88C01B4416E4911000744013</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>88C01B4316E4911000744013</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"/Applications/Spark Inspector.app/Contents/Resources/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>musicPlayer/musicPlayer-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>musicPlayer/musicPlayer-Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>4.3</string>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>-ObjC</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>88C01B4416E4911000744013</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"/Applications/Spark Inspector.app/Contents/Resources/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>musicPlayer/musicPlayer-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>musicPlayer/musicPlayer-Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>4.3</string>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>-ObjC</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>88C01B4516E4915B00744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AVFoundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AVFoundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>88C01B4616E4915B00744013</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88C01B4516E4915B00744013</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>88C01B5016E4991700744013</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>audio.mp3</string>
+			<key>path</key>
+			<string>wakeup.mp3</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88C01B5116E4991800744013</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88C01B5016E4991700744013</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>HYXIFWTDXJPPRRMDCEPMDTJH</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>QuartzCore.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/QuartzCore.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>KHTIUSNFGMRPHCRVUMVBPGNH</key>
+		<dict>
+			<key>fileRef</key>
+			<string>QMNTBWVDMICWTEJGUAKXRYSM</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>KIYDQKWBMRKIEYEVRWSLKUDQ</key>
+		<dict>
+			<key>fileRef</key>
+			<string>HYXIFWTDXJPPRRMDCEPMDTJH</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>KNPONLATPTEBRUFEBXNXFHCQ</key>
+		<dict>
+			<key>fileRef</key>
+			<string>THBDITSPYVFDWQYYBDCIDIXG</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>QMNTBWVDMICWTEJGUAKXRYSM</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SparkInspector.framework</string>
+			<key>path</key>
+			<string>/Applications/Spark Inspector.app/Contents/Resources/Frameworks/SparkInspector.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>THBDITSPYVFDWQYYBDCIDIXG</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>compiled.mach-o.dylib</string>
+			<key>name</key>
+			<string>libz.dylib</string>
+			<key>path</key>
+			<string>usr/lib/libz.dylib</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>88C01B1216E4911000744013</string>
+</dict>
+</plist>

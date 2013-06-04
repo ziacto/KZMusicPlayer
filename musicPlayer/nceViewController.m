@@ -45,7 +45,7 @@
     pauseBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPause target:self action:@selector(pause)];
 
     musicPlayer.delegate = self;
-    musicPlayer.numberOfLoops = 0;//0播放1次， 1播放2次，  -1无限播放
+    musicPlayer.numberOfLoops = 1;//0播放1次， 1播放2次，  -1无限播放
     musicPlayer.meteringEnabled = YES;
     [self setPlayAudioBackground];
 }
